@@ -1,5 +1,7 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# dart_ipfs_client
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+A client library for the IPFS HTTP API, implemented in Dart.
+
+## Install
+
+## Usage

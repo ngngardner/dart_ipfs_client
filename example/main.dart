@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:logging/logging.dart';
 
 import 'package:dart_ipfs_client/dart_ipfs_client.dart';
@@ -12,7 +14,7 @@ void _setupLogging() {
 void main(List<String> arguments) async {
   _setupLogging();
   var ipfs = Ipfs();
-  var addRes = await ipfs.add('Hello World!');
+  var addRes = await ipfs.add(utf8.encode('Hello World!'));
   print(addRes.body.toJson());
 
   var catRes = await ipfs.cat(addRes.body.hash);

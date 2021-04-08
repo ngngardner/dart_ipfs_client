@@ -6,13 +6,13 @@ import '../response/cat.dart';
 
 part 'ipfs_service.chopper.dart';
 
-@ChopperApi()
+@ChopperApi(baseUrl: '/api/v0')
 abstract class IpfsService extends ChopperService {
-  @Post(path: '/api/v0/add')
+  @Post(path: '/add')
   @multipart
   Future<Response<Add>> add(@PartFile('path') List<int> file);
 
-  @Post(path: '/api/v0/cat', optionalBody: true)
+  @Post(path: '/cat', optionalBody: true)
   Future<Response<Cat>> cat(@Query('arg') String arg);
 
   static IpfsService create(String url) {

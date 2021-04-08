@@ -1,7 +1,7 @@
 name: dart_ipfs_client
-description: A sample command-line application.
-# version: 1.0.0
-# homepage: https://www.example.com
+description: A client library for the IPFS HTTP API.
+version: 0.0.1
+homepage: https://github.com/ngngardner/dart_ipfs_client
 
 environment:
   sdk: '>=2.10.0 <3.0.0'
@@ -16,4 +16,5 @@ dev_dependencies:
   chopper_generator: ^3.0.6
   pedantic: ^1.9.0
   test: ^1.14.4
+  logging: ^0.11.4
   

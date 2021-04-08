@@ -1,4 +1,3 @@
-import 'dart:convert';
 import 'package:chopper/chopper.dart';
 
 import 'package:dart_ipfs_client/src/service/ipfs_service.dart';
@@ -16,8 +15,8 @@ class Ipfs {
     return _service;
   }
 
-  Future<Response<Add>> add(String file) {
-    return _service.add(utf8.encode(file));
+  Future<Response<Add>> add(List<int> contents) {
+    return _service.add(contents);
   }
 
   Future<Response<Cat>> cat(String arg) {
