@@ -2,6 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'add.g.dart';
 
+/// Encapsulates an IPFS '/api/v0/add' response.
 @JsonSerializable(explicitToJson: true)
 class Add {
   @JsonKey(name: 'Bytes')

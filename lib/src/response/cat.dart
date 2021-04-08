@@ -2,6 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'cat.g.dart';
 
+/// Encapsulates an IPFS '/api/v0/cat' response.
 @JsonSerializable(explicitToJson: true)
 class Cat {
   @JsonKey(name: 'Body')
