@@ -1,8 +1,8 @@
 import 'package:chopper/chopper.dart';
 
-import 'package:dart_ipfs_client/src/service/ipfs_service.dart';
-import 'package:dart_ipfs_client/src/response/add.dart';
-import 'package:dart_ipfs_client/src/response/cat.dart';
+import 'ipfs_service.dart';
+import '../response/add.dart';
+import '../response/cat.dart';
 
 class Ipfs {
   IpfsService _service;
