@@ -22,6 +22,11 @@ void main(List<String> arguments) async {
 Outputs:
 
 ```
-{Bytes: null, Hash: Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy, Name: Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy, Size: 20}
+{
+  Bytes: null,
+  Hash: Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy,
+  Name: Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy,
+  Size: 20
+}
 {Body: Hello World!}
 ```
