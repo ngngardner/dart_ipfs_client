@@ -8,7 +8,7 @@ class Cat {
   @JsonKey(name: 'Body')
   String body;
 
-  Cat({this.body});
+  Cat({required this.body});
 
   factory Cat.fromJson(Map<String, dynamic> json) => _$CatFromJson(json);
 

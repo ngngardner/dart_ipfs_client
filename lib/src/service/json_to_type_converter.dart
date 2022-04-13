@@ -11,7 +11,7 @@ class JsonToTypeConverter extends JsonConverter {
   Response<BodyType> convertResponse<BodyType, InnerType>(Response response) {
     return response.copyWith(
       body: fromJsonData<BodyType, InnerType>(
-          response.body, typeToJsonFactoryMap[InnerType]),
+          response.body, typeToJsonFactoryMap[InnerType]!),
     );
   }
 

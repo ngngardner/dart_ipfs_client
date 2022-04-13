@@ -10,7 +10,7 @@ void main() {
       var cid = 'Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy';
 
       var resp = await ipfs.add(utf8.encode('Hello World!'));
-      expect(resp.body.hash, cid);
+      expect(resp.body!.hash, cid);
     });
   });
 
@@ -20,7 +20,7 @@ void main() {
       var cid = 'Qmf1rtki74jvYmGeqaaV51hzeiaa6DyWc98fzDiuPatzyy';
 
       var resp = await ipfs.cat(cid);
-      expect(resp.body.body, 'Hello World!');
+      expect(resp.body!.body, 'Hello World!');
     });
   });
 }

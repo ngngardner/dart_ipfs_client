@@ -6,18 +6,18 @@ part 'add.g.dart';
 @JsonSerializable(explicitToJson: true)
 class Add {
   @JsonKey(name: 'Bytes')
-  int bytes;
+  int? bytes;
 
   @JsonKey(name: 'Hash')
   String hash;
 
   @JsonKey(name: 'Name')
-  String name;
+  String? name;
 
   @JsonKey(name: 'Size')
-  String size;
+  String? size;
 
-  Add({this.bytes, this.hash, this.name, this.size});
+  Add({this.bytes, required this.hash, this.name, this.size});
 
   factory Add.fromJson(Map<String, dynamic> json) => _$AddFromJson(json);
 

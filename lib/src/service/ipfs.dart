@@ -6,7 +6,7 @@ import '../response/cat.dart';
 
 /// Provides access to IPFS HTTP API.
 class Ipfs {
-  IpfsService _service;
+  late IpfsService _service;
 
   /// Creates new IPFS instance.
   ///

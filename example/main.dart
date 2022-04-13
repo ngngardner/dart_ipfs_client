@@ -15,8 +15,8 @@ void main(List<String> arguments) async {
   _setupLogging();
   var ipfs = Ipfs(url: 'http://127.0.0.1:5001');
   var addRes = await ipfs.add(utf8.encode('Hello World!'));
-  print(addRes.body.toJson());
+  print(addRes.body?.toJson());
 
-  var catRes = await ipfs.cat(addRes.body.hash);
-  print(catRes.body.toJson());
+  var catRes = await ipfs.cat(addRes.body!.hash);
+  print(catRes.body?.toJson());
 }
